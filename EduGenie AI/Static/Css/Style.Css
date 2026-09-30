@@ -1,0 +1,410 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef2ff,
+            #f8fafc
+        );
+
+    min-height: 100vh;
+
+    color: #1e293b;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 900px;
+
+    margin: auto;
+
+    padding: 30px 20px;
+}
+
+
+.header {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+
+.logo {
+    font-size: 36px;
+
+    font-weight: bold;
+
+    color: #4f46e5;
+}
+
+
+.subtitle {
+    margin-top: 8px;
+
+    color: #64748b;
+
+    font-size: 16px;
+}
+
+
+.card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    box-shadow:
+        0 10px 35px
+        rgba(15, 23, 42, 0.1);
+}
+
+
+.intro {
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+
+.intro h1 {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+
+    color: #1e1b4b;
+}
+
+
+.intro p {
+    color: #64748b;
+
+    line-height: 1.6;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+
+.form-group label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+}
+
+
+select,
+input,
+textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.2s;
+}
+
+
+select:focus,
+input:focus,
+textarea:focus {
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(99, 102, 241, 0.12);
+}
+
+
+textarea {
+    resize: vertical;
+
+    min-height: 150px;
+}
+
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #4f46e5;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+button:hover {
+    background: #4338ca;
+}
+
+
+button:disabled {
+    opacity: 0.6;
+
+    cursor: not-allowed;
+}
+
+
+.hidden {
+    display: none !important;
+}
+
+
+.loading {
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+.spinner {
+    width: 35px;
+
+    height: 35px;
+
+    border: 4px solid #e2e8f0;
+
+    border-top-color: #4f46e5;
+
+    border-radius: 50%;
+
+    animation:
+        spin 0.8s linear infinite;
+
+    margin: auto auto 12px;
+}
+
+
+@keyframes spin {
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+.error {
+    margin-top: 20px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    border: 1px solid #fecaca;
+
+    line-height: 1.5;
+
+    white-space: pre-wrap;
+}
+
+
+.result-section {
+    margin-top: 30px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+
+.result-section h2 {
+    margin-bottom: 20px;
+
+    color: #1e1b4b;
+}
+
+
+.text-result {
+    background: #f8fafc;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    line-height: 1.7;
+
+    color: #334155;
+}
+
+
+.quiz-card {
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    padding: 20px;
+
+    margin-bottom: 18px;
+}
+
+
+.quiz-card h3 {
+    color: #4f46e5;
+
+    margin-bottom: 12px;
+}
+
+
+.question {
+    font-weight: bold;
+
+    line-height: 1.6;
+
+    margin-bottom: 15px;
+}
+
+
+.options {
+    padding-left: 25px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+.answer {
+    padding: 12px;
+
+    background: #dcfce7;
+
+    color: #166534;
+
+    border-radius: 8px;
+
+    margin-bottom: 10px;
+}
+
+
+.explanation {
+    padding: 12px;
+
+    background: #eff6ff;
+
+    color: #1e40af;
+
+    border-radius: 8px;
+
+    line-height: 1.5;
+}
+
+
+.learning-card {
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 14px;
+
+    padding: 22px;
+
+    margin-bottom: 18px;
+}
+
+
+.learning-card h3 {
+    color: #4f46e5;
+
+    margin-bottom: 12px;
+}
+
+
+.learning-card h4 {
+    margin-top: 15px;
+
+    margin-bottom: 8px;
+
+    color: #334155;
+}
+
+
+.learning-card ul {
+    padding-left: 22px;
+
+    line-height: 1.7;
+}
+
+
+.learning-card p {
+    line-height: 1.6;
+}
+
+
+footer {
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 15px;
+    }
+
+
+    .card {
+        padding: 20px;
+    }
+
+
+    .logo {
+        font-size: 28px;
+    }
+
+
+    .intro h1 {
+        font-size: 23px;
+    }
+
+}
